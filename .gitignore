@@ -1,0 +1,45 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (uv doesn't use one by default, but just in case)
+.venv/
+venv/
+ENV/
+env/
+
+# dotenv / secrets
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# VSCode and PyCharm
+.vscode/
+.idea/
+
+# Python version manager files (optional)
+.python-version
+
+# uv & PEP 582 (__pypackages__ directory, created by uv and similar tools)
+__pypackages__/
+
+# Logs, cache, and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.cache
+
+# Test and coverage output
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
