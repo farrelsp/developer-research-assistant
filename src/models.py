@@ -32,5 +32,4 @@ class ResearchState(BaseModel):
   query: str
   extracted_tools: List[str] = []  # Tools extracted from articles
   companies: List[CompanyInfo] = []
-  search_results: List[Dict[str, Any]] = []
   analysis: Optional[str] = None

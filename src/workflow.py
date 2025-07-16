@@ -26,9 +26,9 @@ class Workflow:
     return graph.compile()
   
   def _extract_tools_step(self, state: ResearchState) -> Dict[str, Any]:
-    print(f"Finding articles about: {state.query}")
+    print(f"Finding articles about: {state.query} alternatives")
     
-    article_query = f"{state.query} tools comparison best alternatives"
+    article_query = f"best {state.query} alternatives tools comparison"
     search_results = self.firecrawl.search_companies(query=article_query, num_results=3)
     
     all_content = ""
